@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            font-size: 2.4em;
+            color: #444;
+            font-weight: bold;
+            font-family: 'Roboto';
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100vw;
+            height: 300px;
+        }
+
+        .item {
+            font-weight: bold;
+            margin: 16px 4px;
+            flex-basis: 25%;
+            height: 25vw;
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        figcaption {
+            width: 90%;
+            height: 10%;
+            padding: 5%;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            position: absolute;
+        }
+
+        figcaption:hover {
+            height: 30%;
+        }
+
+        figcaption:hover .secret {
+            visibility: visible;
+        }
+
+        .secret {
+            visibility: hidden;
+        }
+
+        @media screen and (max-width:600px) {
+            .item {
+                flex-basis: 90%;
+                height: 90vw;
+            }
+        }
+    </style>
+    <base href="../assets/">
+</head>
+
+<body>
+    <h1 class="title">Galeria de Gatos 😻 </h1>
+    <div class="container">
+        <div class="item">
+            <img src="gato-1.jpeg" alt="">
+            <figcaption>Gato #1
+                <p class="secret">
+                    Texto secreto do primeiro gato
+                </p>
+            </figcaption>
+
+        </div>
+        <div class="item">
+            <img src="gato-2.jpeg" alt="">
+            <figcaption>Gato #2
+                <p class="secret">
+                    Texto secreto do segundo gato
+                </p>
+            </figcaption>
+
+        </div>
+        <div class="item">
+            <img src="gato-3.jpeg" alt="">
+            <figcaption>Gato #3<p class="secret">
+                    Texto secreto do terceiro gato
+                </p>
+            </figcaption>
+
+        </div>
+        <div class="item">
+            <img src="gato-4.jpeg" alt="">
+            <figcaption>Gato #4<p class="secret">
+                    Texto secreto do quarto gato
+                </p>
+            </figcaption>
+
+        </div>
+        <div class="item">
+            <img src="gato-5.jpeg" alt="">
+            <figcaption>Gato #5 <p class="secret">
+                    Texto secreto do quinto gato
+                </p>
+            </figcaption>
+
+        </div>
+        <div class="item">
+            <img src="gato-6.jpeg" alt="">
+            <figcaption>Gato #6 <p class="secret">
+                    Texto secreto do sexto gato
+                </p>
+            </figcaption>
+
+        </div>
+    </div>
+</body>
+
+</html>
