@@ -10,27 +10,53 @@
         body {
             margin: 0;
             padding: 0;
+            background-color: #eee;
+            overflow-x: hidden;
+            color: #333;
+            font-family: sans-serif;
         }
 
-        .title {
-            font-size: 2.4em;
-            color: #444;
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .title>h1 {
+            font-size: 1.6em;
             font-weight: bold;
             font-family: 'Roboto';
-            text-align: center;
+        }
+
+        .navbar {
+            background-color: blueviolet;
+            color: white;
+            margin: 0;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar>div {
+            flex-basis: 30vw;
+            margin: 0 16px;
         }
 
         .container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
             width: 100vw;
             height: 300px;
         }
 
+        .content {
+            width: 80%;
+            margin: auto;
+        }
+
         .item {
             font-weight: bold;
-            margin: 16px 4px;
+            margin: 16px;
             flex-basis: 25%;
             height: 25vw;
             position: relative;
@@ -65,6 +91,21 @@
             visibility: hidden;
         }
 
+        .menu>ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu>ul>li {
+            list-style-type: none;
+            padding: 16px;
+            border-radius: 4px;
+        }
+
+        .menu>ul>li:hover {
+            background-color: #7d1ed7;
+        }
+
         @media screen and (max-width:600px) {
             .item {
                 flex-basis: 90%;
@@ -76,7 +117,33 @@
 </head>
 
 <body>
-    <h1 class="title">Galeria de Gatos 😻 </h1>
+    <!---->
+    <nav class="navbar">
+        <div class="title">
+            <h1>Galeria de Gatos</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Sobre</li>
+                <li>Contato</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>Produtos para gatos</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias saepe placeat, quas quia veniam itaque est
+            quaerat veritatis cupiditate possimus eligendi illo ipsam, delectus recusandae repudiandae quo ducimus,
+            necessitatibus nostrum?</p>
+        <p>Incidunt, nostrum! Autem illo quod quis voluptatibus, rerum quia distinctio tempora deleniti harum illum
+            incidunt nesciunt odio molestias, ea iste. Praesentium, odit dolorum vero eveniet ducimus voluptatibus
+            adipisci nostrum ullam!</p>
+        <p>Possimus atque quae sequi ipsum? Veritatis obcaecati unde facilis dolor est, aliquam sint consectetur
+            suscipit libero cupiditate voluptatibus enim corrupti exercitationem excepturi eveniet et illo tenetur
+            facere ducimus commodi! Atque!</p>
+        <h1>Gatos & Raças</h1>
+    </div>
     <div class="container">
         <div class="item">
             <img src="gato-1.jpeg" alt="">
