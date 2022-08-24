@@ -52,7 +52,6 @@
             justify-content: center;
             flex-wrap: wrap;
             width: 100vw;
-            height: 300px;
         }
 
         .content {
@@ -102,17 +101,30 @@
             justify-content: space-between;
         }
 
-        .menu>ul>li {
+        ul>li {
             list-style-type: none;
+        }
+        .menu>ul>li{
             padding: 16px;
             border-radius: 4px;
         }
-
         .menu>ul>li:hover {
             background-color: #7d1ed7;
             font-weight: bold;
         }
-
+        #footer{
+            display: flex;
+            margin-top: 16px;
+            padding: 32px;
+            background-color: #222;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .social-media{
+            margin-block-start: 0;
+            padding-inline-start: 0;
+        }
         @media screen and (max-width:600px) {
             .item {
                 flex-basis: 90%;
@@ -213,6 +225,20 @@
 
         </div>
     </div>
+    <footer id="footer">
+        <div style="text-align: left">
+            <span style="font-weight:bold; margin-bottom: 32px;">Nos siga nas redes sociais</span>
+            <ul class="social-media">
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Linkedin</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        <div>
+            &copy; Higor Tavares 2022
+        </div>
+    </footer>
 </body>
 
 </html>
